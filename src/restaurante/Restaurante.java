@@ -22,8 +22,8 @@ public class Restaurante {
         
         private Connection conexao(){
             try{
-                Connection conn = DriverManager.getConnection(url,user,password);
-                System.out.println(conn);
+               return DriverManager.getConnection(url,user,password);
+                
             } catch (SQLException e){
                 throw new RuntimeException(e);
             }
