@@ -9,34 +9,28 @@ package restaurante;
 import java.sql.Connection; 
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.*;
 /**
  *
  * @author CAMARGO
  */
 public class Restaurante {
 
-    /**
-     * @param args the command line arguments
-     */
-   public static String status = "Não conectou...";
-       
-       	public Restaurante() {     }
+        private String url = "jdbc:mysql://localhost:3306/Restaurante";
+        private String user = "root";
+        private String password = "";
         
-        public static java.sql.Connection getConexaoMySQL() {
-        Connection connection = null;    //atributo do tipo Connection
-        return connection;
-        
-        
-        String driverName = "Banco_Finalizado";                  
-try {
-	Class.forName(driverName);
-} catch (ClassNotFoundException e) {
-	e.printStackTrace();
-}
+        private Connection conexao(){
+            try{
+                Connection conn = DriverManager.getConnection(url,user,password);
+                System.out.println(conn);
+            } catch (SQLException e){
+                throw new RuntimeException(e);
+            }
         }
         
-        
-}
+    
+    }
 
 
 
