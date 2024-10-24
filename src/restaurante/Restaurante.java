@@ -20,7 +20,7 @@ public class Restaurante {
         private String user = "root";
         private String password = "";
         
-        private Connection conexao(){
+        public Connection conexao(){
             try{
                return DriverManager.getConnection(url,user,password);
                 
@@ -29,7 +29,6 @@ public class Restaurante {
             }
         }
         
-    
     }
 
 
