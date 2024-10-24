@@ -1,0 +1,12 @@
+# como criar uma branch
+
+- para criar uma branch use o comando "git checkout -b nome_da_branch"
+- para entrar em uma branch ja existente use o comando "git checkout nome_da_branch"
+- pode dar commit e push nessa branch a vontade sem afetar a main
+- para mesclar a main com a branch vamos usar o comando merge
+- antes de usa o merge troque para a main com o "git checkout main"
+- então mescle com o comando "git merge nome_da_branch"
+- agora de o commit e push para confirmar as alterações
+
+OBS: caso voce queira deletar uma branch use o comando "git checkout -d nome_da_branch"
+
