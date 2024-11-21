@@ -9,6 +9,15 @@ package restaurante;
  * @author CAMARGO
  */
 public class Cliente extends javax.swing.JFrame {
+    private int id;
+    private String nome;
+    private String cpf;
+    private String email;
+    private String endereco;
+    private String telefone;
+    private String sexo;
+    private int idade;
+    private String dataCadastro;
 
     /**
      * Creates new form Cliente
