@@ -100,7 +100,7 @@ public class pesquisa extends javax.swing.JFrame {
 
     private void enviarActionPerformed(java.awt.event.ActionEvent evt) {
         String idSTR = id.getText();
-        int id = -1;
+        int id;
         String table = (String) tabela.getSelectedItem();
 
         try {
