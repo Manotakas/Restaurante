@@ -15,7 +15,7 @@ public class DatabaseCliente {
     public DatabaseCliente() {
         try {
             connection = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/restaurante", "root", ""); // Ajuste sua senha e banco
+                    "jdbc:mysql://localhost:3306/Restaurante", "root", ""); // Ajuste sua senha e banco
         } catch (SQLException e) {
             e.printStackTrace();
         }
